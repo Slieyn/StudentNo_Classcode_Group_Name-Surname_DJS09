@@ -1,23 +1,92 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Couch Surfing Website</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
+
   <body>
-    <div class="nav-bar">
-      <div class="logo"></div>
-      <h3 class="user-container">
-        Welcome
-        <span id="returning-user"></span>
-        <span id="user"></span>
-      </h3>
-    </div>
+    <header class="header">
+      <div class="nav-bar">
+        <img src="/images/sofa-logo.png" alt="Couch Icon" class="logo" />
+        <h3 class="user-container">
+          Welcome <span id="returning-user"></span> <span id="user"></span>
+        </h3>
+      </div>
+    </header>
+
     <div class="container">
+      <div class="main-image">
+        <img
+          src="/images/italian-property.jpg"
+          alt="Main Property"
+          class="main-image"
+        />
+      </div>
       <h5 id="reviews"></h5>
+      <button id="button">Get reviews</button>
+      <div class="reviews"></div>
+      <div class="break"></div>
+      <h3>Other Properties recommended to you:</h3>
+      <div class="properties"></div>
+
+      <div class="card__container">
+        <a class="card__button">Colombian Shack</a>
+        <article class="card__article">
+          <img
+            src="images/colombia-property.jpg"
+            alt="image"
+            class="card__img"
+          />
+          <div class="card__data">
+            <span class="card__description">45/night</span>
+            <h2 class="card__title"></h2>
+          </div>
+        </article>
+
+        <article class="card__article">
+          <a class="card__button">Polish Cottage</a>
+          <img src="images/poland-property.jpg" alt="image" class="card__img" />
+          <div class="card__data">
+            <span class="card__description">30/night</span>
+            <h2 class="card__title"></h2>
+          </div>
+        </article>
+
+        <article class="card__article">
+          <a class="card__button">London Flat</a>
+          <img src="images/london-property.jpg" alt="image" class="card__img" />
+          <div class="card__data">
+            <span class="card__description">25/night</span>
+            <h2 class="card__title"></h2>
+          </div>
+        </article>
+
+        <article class="card__article">
+          <a class="card__button">Malia Hotel</a>
+          <img
+            src="images/malaysian-property.jpg"
+            alt="image"
+            class="card__img"
+          />
+          <div class="card__data">
+            <span class="card__description">35/night</span>
+            <h2 class="card__title"></h2>
+          </div>
+        </article>
+      </div>
     </div>
-    <script type="module" src="./src/index.ts"></script>
+    <footer class="footer">
+      <p id="location">London 11.03 17°</p>
+    </footer>
+
+    <script src="index.pack.js"></script>
   </body>
 </html>
